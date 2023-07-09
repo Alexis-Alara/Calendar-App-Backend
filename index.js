@@ -10,14 +10,13 @@ app.use( express.static('public') );
 
 
 // Routes
-// app.get('/', (req, res)=>(
-//     res.json({
-//         ok: true
-//     })
-// ));
+// AUTH
+app.use('/api/auth', require('./routes/auth'));
+//CRUD
+
+
 
 // Listen
-// Test port
 app.listen( process.env.PORT, () => (
     console.log(`Server running in port ${ process.env.PORT }`)
-) )
+));
