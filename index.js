@@ -8,6 +8,8 @@ const app = express();
 // Public directory
 app.use( express.static('public') );
 
+// Parsing body
+app.use( express.json() );
 
 // Routes
 // AUTH
