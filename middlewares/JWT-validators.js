@@ -15,7 +15,7 @@ const JWTValidators = ( req, res, next ) => {
     try {
         const { uid, name } =  jwt.verify(
             token,
-            process.env.SECRET_JWT_SEED
+            "TH3-S3CR3T-W0RD-IS-TH3-ON3-Pl3C3"
         );
 
         req.uid = uid;
