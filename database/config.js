@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const dbConnection = async() => {
     try {
-        await mongoose.connect( process.env.DB_CNN , { 
+        await mongoose.connect( "mongodb+srv://mern_user:IvcQIFebNorQ6yX2@calendario.fazthll.mongodb.net/mern_calendar" , { 
             useNewUrlParser: true, 
             useUnifiedTopology: true
         });
